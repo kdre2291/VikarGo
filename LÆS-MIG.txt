@@ -1,0 +1,48 @@
+VikarGO — statisk hjemmeside (uden WordPress)
+================================================
+
+INDHOLD
+Denne mappe indeholder en færdig, statisk hjemmeside med 5 sider:
+- index.html      (Forside)
+- ydelser.html
+- om.html
+- bliv-vikar.html
+- kontakt.html
+- style.css        (fælles design/layout for alle sider)
+
+SÅDAN DEPLOYER DU DEN
+1. Log ind på dit webhotels kontrolpanel (fx one.com, Simply.com) eller brug FTP/SFTP.
+2. Upload alle filerne i denne mappe til roden af dit webhotel (der hvor index.html
+   skal ligge, så dinside.dk viser forsiden automatisk).
+3. Peg dit domænes DNS mod webhotellet, hvis det ikke allerede peger derhen.
+Det er det — ingen database, intet WordPress, ingen installation.
+
+VIGTIGT: BILLEDERNE
+Siderne henter i øjeblikket billeder direkte fra Squarespace's CDN
+(images.squarespace-cdn.com). De virker lige nu, men forsvinder, hvis du
+lukker dit Squarespace-abonnement. Før du gør det:
+1. Åbn hver billed-URL i style.css/HTML-filerne i din browser og gem billedet.
+2. Læg dem i en mappe kaldet "images" ved siden af HTML-filerne.
+3. Ret hver <img src="https://images.squarespace-cdn.com/..."> til
+   <img src="images/dit-filnavn.jpg"> i de 5 HTML-filer.
+
+VIGTIGT: KONTAKTFORMULARERNE
+"Bliv vikar" og "Kontakt os" har formularer, der lige nu åbner besøgendes
+e-mail-program (mailto:din@email.dk) med det udfyldte indhold. Det virker,
+men er lidt gammeldags, og nogle browsere/telefoner beder brugeren bekræfte.
+
+To ting du bør gøre:
+1. Erstat "din@email.dk" i bliv-vikar.html og kontakt.html med jeres rigtige
+   modtager-mail.
+2. Overvej i stedet en gratis formular-service som Formspree.io eller
+   Getform.io — de giver et rigtigt "send"-flow uden at brugeren skal åbne
+   sin mail-app, og kræver ingen database eller server.
+
+TELEFONNUMMER
+28 51 26 80 er sat ind som kontakttelefon (fundet i det oprindelige
+Squarespace-indhold). Ret det i style.css/HTML-filerne, hvis det er forkert.
+
+REDIGERING
+Alle 5 sider er almindelig HTML + én CSS-fil. Du kan redigere teksten direkte
+i HTML-filerne i en almindelig teksteditor (fx VS Code) — ingen særlig
+software nødvendig.

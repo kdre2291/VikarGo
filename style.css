@@ -61,11 +61,14 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
 }
 
 .logo {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: var(--primary-dark);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 0;
 }
 
 .nav { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
@@ -237,7 +240,19 @@ footer.site-footer .wrap {
   gap: 24px;
 }
 footer.site-footer a { color: #E9E5D8; }
-footer .foot-logo { font-family: "Fraunces", serif; font-size: 1.2rem; font-weight: 600; }
+footer .foot-logo {
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .foot-logo .foot-mark {
+  height: 26px;
+  width: auto;
+  border-radius: 0;
+}
 footer .foot-nav { display: flex; gap: 20px; list-style: none; padding: 0; margin: 10px 0 0; flex-wrap: wrap; }
 footer .foot-nav a { text-decoration: none; font-size: 0.95rem; opacity: 0.9; }
 footer p { color: #C9C3AF; font-size: 0.9rem; max-width: none; }

@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../../../../Downloads/vikargo-statisk-side"
+	},
+	{
+		"name": "VikarGo",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "VikarGo"
+  }
+}
